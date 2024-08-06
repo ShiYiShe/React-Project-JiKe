@@ -28,7 +28,7 @@ const BarChart = ({ title, yData }) => {
       ]
     };
     option && myChart.setOption(option);
-  }, [])
+  }, [title, yData])
   return <div ref={chartRef} style={{ width: '500px', height: '400px' }}></div>
 }
 
